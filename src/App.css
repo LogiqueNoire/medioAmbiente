@@ -189,17 +189,23 @@ section {
 }
 
 #slideText1 {
-  position: relative;
   top: 25%;
   left: -40vw;
   width: 35vw;
 }
 
 #carrousel {
+  position: relative;
   display: flex;
   align-items: center;
-  width: 200%;
-  max-width: 200%;
+  width: 100%;
+  max-width: 100%;
+}
+
+#hijo{
+  position: absolute;
+  top: 17vw;
+  left: 50vw;
 }
 
 /* Estilos para la galeria */
