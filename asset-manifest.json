@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/medioAmbiente/static/css/main.1cf00ac3.css",
+    "main.js": "/medioAmbiente/static/js/main.0c191342.js",
+    "static/media/huanchaco3.webp": "/medioAmbiente/static/media/huanchaco3.fad65d505c8c00dcaedf.webp",
+    "static/media/huanchaco1.jpg": "/medioAmbiente/static/media/huanchaco1.e8612071d21d32a37194.jpg",
+    "static/media/garbage.png": "/medioAmbiente/static/media/garbage.c9d24ea8913831e6ea61.png",
+    "static/media/limpieza.webp": "/medioAmbiente/static/media/limpieza.d9054a8dc9c530ca8c33.webp",
+    "index.html": "/medioAmbiente/index.html",
+    "main.1cf00ac3.css.map": "/medioAmbiente/static/css/main.1cf00ac3.css.map",
+    "main.0c191342.js.map": "/medioAmbiente/static/js/main.0c191342.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cf00ac3.css",
+    "static/js/main.0c191342.js"
+  ]
+}
