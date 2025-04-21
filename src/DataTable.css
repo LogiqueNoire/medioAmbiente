@@ -1,0 +1,49 @@
+/* Estilos para la tabla del cronograma */
+table {
+    border-collapse:separate;
+    margin: 0px;
+  }
+  
+  th, td {
+    padding: 8vw;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #B5F8FF; /* Color celeste para el encabezado */
+    color: #24AACF;
+  }
+  
+  .table thead th {
+    border: 0px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+  }
+  
+  .table td, .table th{
+    padding: 1.4vw;
+    border: 0px;
+  }
+  
+  td {
+    background-color: #F5F7FA; /* Color gris claro para las celdas */
+    font-size: 1.4vw;
+  }
+  
+  tr td {
+    color: #89939E;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    background-color: transparent; /* Alternar colores para filas pares */
+  }
+  
+  tr:hover td {
+    background-color: #d5f3ff; /* Color de fondo al pasar el mouse */
+  }
+  
+  .table-responsive {
+    padding: 2.5%;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%2324AACFFF' stroke-width='3' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 20px;
+  }

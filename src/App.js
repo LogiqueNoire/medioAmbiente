@@ -1,14 +1,16 @@
 import './App.css';
-
+import Gallery from './/Gallery.jsx'
+import DataTable from './/DataTable.jsx';
+import Slides from './/Slides.jsx';
 
 function App() {
   return (
     <div className="App">
       {nav()}
-      {slides()}
-      {gallery()}
+      <Slides></Slides>
+      <Gallery title = 'Evidencias visuales'></Gallery>
       {numeros()}
-      {cronograma()}
+      <DataTable title = 'Cronograma'></DataTable>
       {pharse()}
     </div>
   );
@@ -47,127 +49,6 @@ function nav() {
 
   );
 }
-
-function slides() {
-  return (
-    <section className='bg-silver m-0 p-0'>
-      <div id='carrousel'>
-        <img id='slide1-1' src={require("./img/huanchaco1.jpg")} alt="" />
-        <img id='slide1-2' src={require("./img/limpieza.webp")} alt="" />
-        <img id='slide1-3' src={require("./img/huanchaco3.webp")} alt="" />
-
-      </div>
-      <div id='hijo'>
-        <h1 id='slideText1'>Tú puedes ser parte del <span className='celeste'>cambio</span></h1>
-        <h5 id='slideText1' className='mt-2'><span className='grey'>Participa en una jornada de limpieza o en taller de sensibilización</span></h5>
-      </div>
-    </section>
-  );
-}
-
-function gallery() {
-  return (
-    <section>
-      <h1 className="text-center pt-4">Evidencias visuales</h1>
-      <div className="gallery justify-content-center d-flex flex-wrap">
-
-        <div className="column">
-          <div className="d-flex">
-            <div className="col">
-              <img className='imgGallery' src={require('./img/Imagen2Apple.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
-              <img className='imgGallery' src={require('./img/Imagen3.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
-            </div>
-            <div className="col">
-              <img className='imgGallery' src={require('./img/Imagen1.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
-            </div>
-          </div>
-          <div className="d-flex">
-            <div className="col">
-              <img className='imgGallery' src={require('./img/Imagen5Camera.png')} alt=""></img>
-            </div>
-
-          </div>
-        </div>
-
-        <div className="column">
-          <div className="d-flex">
-            <div className="col">
-              <img className='imgGallery' src={require('./img/Imagen9.png')} alt=""></img>
-            </div>
-
-          </div>
-          <div className="d-flex">
-            <div className="col">
-              <img className='imgGallery' src={require('./img/Imagen6.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
-            </div>
-            <div className="col">
-              <img className='imgGallery' src={require('./img/Imagen8Circular.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
-              <img className='imgGallery' src={require('./img/Imagen7.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
-            </div>
-          </div>
-        </div>
-
-        <img className='imgGallery' src={require('./img/Imagen4Central.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
-
-      </div>
-
-      <div className="modal fade" id="carrusel" data-keyboard="false" tabindex="-1" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <div className="row justify-content-around">
-              <button type="button" id="left" className="btn btn-secondary align-middle">left</button>
-              <div className="col-md-6">
-                <img className='imgGallery' id="imageBig" alt=""></img>
-              </div>
-              <button type="button" id="right" className="btn btn-primary">right</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function cronograma() {
-  return (
-    <section className='d-flex align-items-center justify-content-center'>
-      <h2 className='d-none d-lg-block mr-4'>Cronograma</h2>
-      <div className="table-responsive">    
-      <table className="table text-center">
-        <thead>
-          <tr>
-            <th scope="col">Semana</th>
-            {[...Array(14)].map((_, index) => (
-              <th key={index} scope="col">{index + 1}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Label 1</td>
-            {[...Array(14)].map((_, index) => (
-              <td key={index}></td>
-            ))}
-          </tr>
-          <tr>
-            <td>Label 2</td>
-            {[...Array(14)].map((_, index) => (
-              <td key={index}></td>
-            ))}
-          </tr>
-          <tr>
-            <td>Label 3</td>
-            {[...Array(14)].map((_, index) => (
-              <td key={index}>X</td>
-            ))}
-          </tr>
-        </tbody>
-      </table>
-      </div>
-    </section>
-  );
-};
 
 function numeros() {
   return (
@@ -239,7 +120,5 @@ function pharse() {
 
   );
 }
-
-
 
 export default App;
