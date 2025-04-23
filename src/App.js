@@ -3,6 +3,7 @@ import Gallery from './/Gallery.jsx'
 import DataTable from './/DataTable.jsx';
 import Slides from './/Slides.jsx';
 import Statistics from './/Statistics.jsx';
+import Header from './/Header.jsx';
 
 function App() {
   return (
