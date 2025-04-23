@@ -9,10 +9,23 @@ function App() {
   return (
     <div className="App">
       <Header ></Header>
-      <Slides brand='Por un Huanchaco limpio' link1 = 'Evidencias' link2 = 'Cronograma' link3 = 'Metas' link4 = 'Eventos'></Slides>
-      <Gallery title = 'Evidencias visuales'></Gallery>
-      <Statistics textTitle = 'Nuestras metas' textTitleHighligth = 'en números' subtitle = 'Fuente: Formato ICD elaborado por el grupo'></Statistics>
-      <DataTable title = 'Cronograma'></DataTable>
+      <Slides brand='Por un Huanchaco limpio' link1='Evidencias' link2='Cronograma' link3='Metas' link4='Eventos'></Slides>
+      <Gallery title='Evidencias visuales'></Gallery>
+      <Statistics textTitle='Nuestras metas' textTitleHighligth='en números' subtitle='Fuente: Formato ICD elaborado por el grupo'></Statistics>
+      <DataTable title='Cronograma'
+        actividades={['Elección del tema del proyecto', 'Planificación de las actividades mediante reunión grupal',
+          'Diseño de las encuestas pre-test y post-test',
+          'Diseño de prototipo de landing page',
+          'Implementación de landing page',
+          'Aplicación de Encuesta Pre-test',
+          'Realización del Taller de Sensibilización',
+          'Procesamiento de datos recogidos en encuesta pretest',
+          'Jornada de limpieza en la playa',
+          'Análisis de Residuos Recolectados',
+          'Aplicación Encuesta Post-test',
+          'Análisis Comparativo de Encuestas y Evaluación del Impacto',
+          'Elaboración del Informe Final y Propuesta de Soluciones Sostenibles',
+          'Presentación de Resultados']}></DataTable>
       {pharse()}
     </div>
   );
