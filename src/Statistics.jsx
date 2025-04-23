@@ -7,7 +7,7 @@ const Statistics = ({textTitle, textTitleHighligth, subtitle}) => {
       <section className='bg-silver'>
         <div className="row">
           <div id='nuestrasMetas'>
-            <h1 className="text-right">{textTitle}<h1 className='celeste'>{textTitleHighligth}</h1></h1>
+            <h1 className="text-right">{textTitle}<span className='celeste'>{textTitleHighligth}</span></h1>
             <h6 className="text-right">{subtitle}</h6>
           </div>
           <div id="nuestrasMetas2" className=''>

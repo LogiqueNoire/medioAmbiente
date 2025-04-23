@@ -71,6 +71,11 @@ section {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  section:nth-child(2) {
+    padding-inline: 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .quotation {

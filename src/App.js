@@ -18,7 +18,7 @@ function App() {
           'Diseño de prototipo de landing page',
           'Implementación de landing page',
           'Aplicación de Encuesta Pre-test',
-          'Realización del Taller de Sensibilización',
+          'Realización del taller virtual de sensibilización',
           'Procesamiento de datos recogidos en encuesta pretest',
           'Jornada de limpieza en la playa',
           'Análisis de Residuos Recolectados',
