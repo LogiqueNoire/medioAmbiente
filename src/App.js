@@ -2,98 +2,18 @@ import './App.css';
 import Gallery from './/Gallery.jsx'
 import DataTable from './/DataTable.jsx';
 import Slides from './/Slides.jsx';
+import Statistics from './/Statistics.jsx';
 
 function App() {
   return (
     <div className="App">
-      {nav()}
-      <Slides></Slides>
+      <Header ></Header>
+      <Slides brand='Por un Huanchaco limpio' link1 = 'Evidencias' link2 = 'Cronograma' link3 = 'Metas' link4 = 'Eventos'></Slides>
       <Gallery title = 'Evidencias visuales'></Gallery>
-      {numeros()}
+      <Statistics textTitle = 'Nuestras metas' textTitleHighligth = 'en números' subtitle = 'Fuente: Formato ICD elaborado por el grupo'></Statistics>
       <DataTable title = 'Cronograma'></DataTable>
       {pharse()}
     </div>
-  );
-}
-
-function nav() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#navbarNav">
-          
-          Por un huanchaco limpio
-        </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="#navbarNav">Evidencias</a>
-            </li>
-            <li className="nav-item" >     
-              <a className="nav-link" href="#navbarNav">Cronograma</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#navbarNav">Metas</a>
-            </li>
-            <li className="nav-item" >
-              <a className="nav-link" href="#navbarNav">Eventos</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-
-  );
-}
-
-function numeros() {
-  return (
-    <section className='bg-silver'>
-      <div className="row">
-        <div id='nuestrasMetas'>
-          <h1 className="text-right">Nuestras metas<h1 className='celeste'>en números</h1></h1>
-          <h6 className="text-right">Fuente: Formato ICD elaborado por el grupo</h6>
-        </div>
-        <div id="nuestrasMetas2" className=''>
-
-          <div className="meta">
-            <div className="">
-              <img id="" src={require('./img/personas.png')} className="icon" alt=""></img>
-            </div>
-            <div className=''>
-              <h1 className="text-left">20</h1>
-              <h6 className="text-left">participantes de la jornada de limpieza</h6>
-            </div>
-          </div>
-
-          <div className="meta">
-            <div className="">
-              <img id="" src={require('./img/presentacion.png')} className="icon" alt=""></img>
-            </div>
-            <div className=''>
-              <h1 className="text-left">20</h1>
-              <h6 className="text-left">asistentes al taller de sensibilización</h6>
-            </div>
-          </div>
-
-          <div className="meta">
-            <div className="">
-              <img id="" src={require('./img/garbage.png')} className="icon" alt=""></img>
-            </div>
-            <div className=''>
-              <h1 className="text-left">50 kg</h1>
-              <h6 className="text-left">de basura recolectada</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
   );
 }
 
