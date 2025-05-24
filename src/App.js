@@ -8,8 +8,8 @@ import Header from './/Header.jsx';
 function App() {
   return (
     <div className="App">
-      <Header ></Header>
-      <Slides brand='Por un Huanchaco limpio' link1='Evidencias' link2='Cronograma' link3='Metas' link4='Eventos'></Slides>
+      <Header brand='Por un Huanchaco limpio' link1='Evidencias' link2='Cronograma' link3='Metas' link4='Eventos'></Header>
+      <Slides></Slides>
       <Gallery title='Evidencias visuales'></Gallery>
       <Statistics textTitle='Nuestras metas' textTitleHighligth='en números' subtitle='Fuente: Formato ICD elaborado por el grupo'></Statistics>
       <DataTable title='Cronograma'

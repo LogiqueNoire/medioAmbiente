@@ -1,5 +1,5 @@
 import React from 'react';
-import g from './Gallery.css';
+import './/Gallery.css';
 
 const Gallery = ({title}) => {
     return (
@@ -10,7 +10,7 @@ const Gallery = ({title}) => {
           <div className="column">
             <div className="d-flex">
               <div className="col">
-                <img className={g.imgGallery} src={require('./img/Imagen2Apple.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
+                <img className='imgGallery' src={require('./img/Imagen2Apple.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
                 <img className='imgGallery' src={require('./img/Imagen3.png')} data-toggle="modal" data-target="#carrusel" alt=""></img>
               </div>
               <div className="col">
