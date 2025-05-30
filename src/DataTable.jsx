@@ -6,7 +6,7 @@ const DataTable = ({title, actividades}) => {
       <section className=''>
         <h2 className='d-none d-lg-block mr-4'>{title}</h2>
         <div className="table-responsive">    
-        <table className="table text-center">
+        <table className="table">
           <thead>
             <tr>
               <th scope="col">{actividades[0]}</th>
@@ -19,19 +19,19 @@ const DataTable = ({title, actividades}) => {
             <tr>
               <td>{actividades[1]}</td>
               {[...Array(14)].map((_, index) => (
-                <td key={index}></td>
+                <td key={index} className="text-end"></td>
               ))}
             </tr>
             <tr>
               <td>{actividades[2]}</td>
               {[...Array(14)].map((_, index) => (
-                <td key={index}></td>
+                <td key={index} className="text-end"></td>
               ))}
             </tr>
             <tr>
               <td>{actividades[3]}</td>
               {[...Array(14)].map((_, index) => (
-                <td key={index}>X</td>
+                <td key={index} >X</td>
               ))}
             </tr>
             <tr>

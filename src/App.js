@@ -1,17 +1,22 @@
 import './App.css';
-import Gallery from './/Gallery.jsx'
+import Gallery3 from './Gallery3.jsx'
 import DataTable from './/DataTable.jsx';
 import Slides from './/Slides.jsx';
 import Statistics from './/Statistics.jsx';
 import Header from './/Header.jsx';
+import Gallery1 from './Gallery1.jsx';
 
 function App() {
   return (
     <div className="App">
       <Header brand='Por un Huanchaco limpio' link1='Evidencias' link2='Cronograma' link3='Metas' link4='Eventos'></Header>
+
       <Slides></Slides>
-      <Gallery title='Evidencias visuales'></Gallery>
+
+      <Gallery3 title='Evidencias fotográficas'></Gallery3>
+
       <Statistics textTitle='Nuestras metas' textTitleHighligth='en números' subtitle='Fuente: Formato ICD elaborado por el grupo'></Statistics>
+
       <DataTable title='Cronograma'
         actividades={['Elección del tema del proyecto', 'Planificación de las actividades mediante reunión grupal',
           'Diseño de las encuestas pre-test y post-test',
@@ -25,7 +30,10 @@ function App() {
           'Aplicación Encuesta Post-test',
           'Análisis Comparativo de Encuestas y Evaluación del Impacto',
           'Elaboración del Informe Final y Propuesta de Soluciones Sostenibles',
-          'Presentación de Resultados']}></DataTable>
+          'Presentación de Resultados']}>
+      </DataTable>
+
+      <Gallery1 title="Evidencias audiovisuales"></Gallery1>
       {pharse()}
     </div>
   );
