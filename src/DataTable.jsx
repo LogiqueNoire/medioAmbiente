@@ -19,7 +19,7 @@ const DataTable = ({ title, actividades }) => {
             {actividades.map((el, key) => (
               <tr>
                 <td>{el.nombre}</td>
-                {[...Array(actividades.length)].map((_, index) => (
+                {[...Array(actividades[actividades.length-1].semana)].map((_, index) => (
                   <td>
                     {index+1 === el.semana ? 'X' : ''}
                   </td>
