@@ -1,20 +1,20 @@
 /* Estilos para la galeria */
-.gallery {
+.gallery3 {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .gallery>* {
+  .gallery3>* {
     margin: 0.2%;
   }
   
-  .col {
+  .col3 {
     padding-right: 2.5%;
     padding-left: 2.5%;
   }
   
-  .imgGallery {
+  .imgGallery3 {
     margin-top: 5%;
     margin-bottom: 5%;
     border-color: rgb(0, 0, 0);
@@ -26,17 +26,17 @@
     overflow: hidden;
   }
   
-  .imgGallery:hover {
+  .imgGallery3:hover {
     transform: scale(1.05);
   }
   
   /*columnas*/
-  .column {
+  .column3 {
     max-width: 45%;
   }
   
   /*mitad izquierda*/
-  .gallery>:nth-child(1)> :nth-child(1)> :nth-child(1)> :nth-child(1) {
+  .gallery3>:nth-child(1)> :nth-child(1)> :nth-child(1)> :nth-child(1) {
     /*foto1*/
     margin-top: 49%;
     float: right;
@@ -44,23 +44,23 @@
     aspect-ratio: 1/1;
   }
   
-  .gallery>:nth-child(1)> :nth-child(1)> :nth-child(1)> :nth-child(2) {
+  .gallery3>:nth-child(1)> :nth-child(1)> :nth-child(1)> :nth-child(2) {
     /*foto2*/
     float: right;
     aspect-ratio: 1.41/1;
   }
   
-  .gallery>:nth-child(1)> :nth-child(1)> :nth-child(2) {
+  .gallery3>:nth-child(1)> :nth-child(1)> :nth-child(2) {
     /*columna interna2*/
     max-width: 40%;
   }
   
-  .gallery>:nth-child(1)> :nth-child(1)> :nth-child(2)>* {
+  .gallery3>:nth-child(1)> :nth-child(1)> :nth-child(2)>* {
     /*foto3*/
     aspect-ratio: 1/1.6;
   }
   
-  .gallery>:nth-child(1)> :nth-child(2)>*>* {
+  .gallery3>:nth-child(1)> :nth-child(2)>*>* {
     /*foto4*/
     float: right;
     max-width: 70%;
@@ -68,7 +68,7 @@
   }
   
   /*mitad derecha*/
-  .gallery>:nth-child(2)> :nth-child(1)>*>* {
+  .gallery3>:nth-child(2)> :nth-child(1)>*>* {
     /*foto1*/
     margin-top: 19.5%;
     float: left;
@@ -76,31 +76,31 @@
     aspect-ratio: 1.6/1;
   }
   
-  .gallery>:nth-child(2)> :nth-child(2)> :nth-child(1) {
+  .gallery3>:nth-child(2)> :nth-child(2)> :nth-child(1) {
     /*columna interna3*/
     max-width: 40%;
   }
   
-  .gallery>:nth-child(2)> :nth-child(2)> :nth-child(1)>* {
+  .gallery3>:nth-child(2)> :nth-child(2)> :nth-child(1)>* {
     /*foto2*/
     margin-top: 161%;
     aspect-ratio: 1/1.6;
   }
   
-  .gallery>:nth-child(2)> :nth-child(2)> :nth-child(2)> :nth-child(1) {
+  .gallery3>:nth-child(2)> :nth-child(2)> :nth-child(2)> :nth-child(1) {
     /*foto3*/
     float: right;
     aspect-ratio: 1.41/1;
   }
   
-  .gallery>:nth-child(2)> :nth-child(2)> :nth-child(2)> :nth-child(2) {
+  .gallery3>:nth-child(2)> :nth-child(2)> :nth-child(2)> :nth-child(2) {
     /*foto4*/
     float: left;
     max-width: 80%;
     aspect-ratio: 1/1;
   }
   
-  .gallery>:nth-child(3) {
+  .gallery3>:nth-child(3) {
     /*fotoCentral*/
     position: absolute;
     margin-top: 300px;
@@ -109,17 +109,17 @@
   }
   
   @media (max-width: 768px) {
-    .gallery {
+    .gallery3 {
       max-width: 100%;
     }
   
-    .imgGallery{
+    .imgGallery3{
       border-width: 5px;
     }
   }
   
   @media (max-width: 1024px) {
-    .gallery>:nth-child(3) {
+    .gallery3>:nth-child(3) {
       /*fotoCentral*/
       margin-top: 29.3%;
       max-width: 34%;
