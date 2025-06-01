@@ -1,10 +1,10 @@
 import React from 'react';
 import './/Gallery3.css';
 
-const gallery3 = ({ title }) => {
+const gallery3 = ({ title, id }) => {
   return (
     <>
-      <aside className='mt-4 mb-4 pt-4 pb-4'>
+      <aside id={id} className='mt-4 mb-4 pt-4 pb-4'>
         <h1 className="text-center">{title}</h1>
         <div className="gallery3 justify-content-center d-flex flex-wrap p-0">
 

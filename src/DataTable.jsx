@@ -9,9 +9,9 @@ const DataTable = ({ title, actividades }) => {
         <table className="table">
           <thead>
             <tr>
-              <th scope="col">{actividades[0].nombre}</th>
+              <th scope="col" style={{backgroundColor:'rgb(184, 248, 255)'}}>{actividades[0].nombre}</th>
               {[...Array(14)].map((_, index) => (
-                <th key={index} scope="col">{index + 1}</th>
+                <th key={index} scope="col" style={{backgroundColor:'rgb(184, 248, 255)'}}>{index + 1}</th>
               ))}
             </tr>
           </thead>
@@ -20,9 +20,7 @@ const DataTable = ({ title, actividades }) => {
               <tr>
                 <td>{el.nombre}</td>
                 {[...Array(actividades[actividades.length-1].semana)].map((_, index) => (
-                  <td>
-                    {index+1 === el.semana ? 'X' : ''}
-                  </td>
+                    index + 1 === el.semana ? <td style={{backgroundColor:'rgb(184, 248, 255)'}}></td> : <td></td>
                 ))}
 
               </tr>

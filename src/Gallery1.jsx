@@ -3,7 +3,7 @@ import videohorizontal2 from './playa/videohorizontal2.mp4'
 import videohorizontal3 from './playa/videohorizontal3.mp4'
 import './Gallery1.css'
 
-const Gallery1 = ({ title }) => {
+const Gallery1 = ({ title, id }) => {
     const images = [...document.querySelectorAll(".foto1 > video")];
     const carIn = document.getElementById("carousel-inner");
 
@@ -43,7 +43,7 @@ const Gallery1 = ({ title }) => {
     });
 
     return (
-        <aside className="container">
+        <aside id={id} className="">
             <h1 className="text-center pt-4">{title}</h1>
             <div className="gallery1 justify-content-center d-flex flex-wrap">
                 <div className="column">
@@ -106,10 +106,10 @@ const Gallery1 = ({ title }) => {
                     <div className="modal-content">
                         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                             <div id="carousel-inner" className="carousel-inner">
-                                <button className="carousel-control-prev" id="before" data-bs-target="#carouselExampleControls" role="button" data-bs-slide="prev">
+                                <button className="carousel-control-prev" id="before" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                 </button>
-                                <button className="carousel-control-next" id="next" data-bs-target="#carouselExampleControls" role="button" data-bs-slide="next">
+                                <button className="carousel-control-next" id="next" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 </button>
                             </div>

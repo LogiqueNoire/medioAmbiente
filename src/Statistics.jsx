@@ -2,9 +2,9 @@ import React from 'react';
 import './Statistics.css';
 import './App.css';
 
-const Statistics = ({textTitle, textTitleHighligth, subtitle}) => {
+const Statistics = ({textTitle, textTitleHighligth, subtitle, id}) => {
     return (
-      <section className='bg-silver'>
+      <section id={id} className='bg-silver'>
         <div className="row">
           <div id='nuestrasMetas'>
             <h1 className="text-end">{textTitle}<br></br><span className='celeste'>{textTitleHighligth}</span></h1>
