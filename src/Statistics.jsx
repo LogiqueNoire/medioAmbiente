@@ -31,7 +31,7 @@ const Statistics = ({textTitle, textTitleHighligth, subtitle}) => {
                 <h6 className="text-left">asistentes al taller de sensibilización</h6>
               </div>
             </div>
-  
+            {/*
             <div className="meta">
               <div className="">
                 <img id="" src={require('./img/garbage.png')} className="icon" alt=""></img>
@@ -41,6 +41,7 @@ const Statistics = ({textTitle, textTitleHighligth, subtitle}) => {
                 <h6 className="text-left">de basura recolectada</h6>
               </div>
             </div>
+            */}
           </div>
         </div>
   

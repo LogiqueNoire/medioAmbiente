@@ -5,6 +5,7 @@ import Slides from './/Slides.jsx';
 import Statistics from './/Statistics.jsx';
 import Header from './/Header.jsx';
 import Gallery1 from './Gallery1.jsx';
+import actividades from './actividades.json'
 
 function App() {
   return (
@@ -18,19 +19,7 @@ function App() {
       <Statistics textTitle='Nuestras metas' textTitleHighligth='en números' subtitle='Fuente: Formato ICD elaborado por el grupo'></Statistics>
 
       <DataTable title='Cronograma'
-        actividades={['Elección del tema del proyecto', 'Planificación de las actividades mediante reunión grupal',
-          'Diseño de las encuestas pre-test y post-test',
-          'Diseño de prototipo de landing page',
-          'Implementación de landing page',
-          'Aplicación de Encuesta Pre-test',
-          'Realización del taller virtual de sensibilización',
-          'Procesamiento de datos recogidos en encuesta pretest',
-          'Jornada de limpieza en la playa',
-          'Análisis de Residuos Recolectados',
-          'Aplicación Encuesta Post-test',
-          'Análisis Comparativo de Encuestas y Evaluación del Impacto',
-          'Elaboración del Informe Final y Propuesta de Soluciones Sostenibles',
-          'Presentación de Resultados']}>
+        actividades={actividades}>
       </DataTable>
 
       <Gallery1 title="Evidencias audiovisuales"></Gallery1>

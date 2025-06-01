@@ -1,0 +1,58 @@
+[
+  {
+    "nombre": "Elección del tema del proyecto",
+    "semana": 1
+  },
+  {
+    "nombre": "Planificación de las actividades mediante reunión grupal",
+    "semana": 2
+  },
+  {
+    "nombre": "Diseño de las encuestas pre-test y post-test",
+    "semana": 3
+  },
+  {
+    "nombre": "Diseño de prototipo de landing page",
+    "semana": 4
+  },
+  {
+    "nombre": "Implementación de landing page",
+    "semana": 5
+  },
+  {
+    "nombre": "Aplicación de Encuesta Pre-test",
+    "semana": 6
+  },
+  {
+    "nombre": "Realización del taller virtual de sensibilización",
+    "semana": 7
+  },
+  {
+    "nombre": "Procesamiento de datos recogidos en encuesta pretest",
+    "semana": 9
+  },
+  {
+    "nombre": "Jornada de limpieza en la playa",
+    "semana": 10
+  },
+  {
+    "nombre": "Actualización de landing page con fotos y videos",
+    "semana": 11
+  },
+  {
+    "nombre": "Aplicación Encuesta Post-test",
+    "semana": 12
+  },
+  {
+    "nombre": "Análisis Comparativo de Encuestas y Evaluación del Impacto",
+    "semana": 12
+  },
+  {
+    "nombre": "Elaboración del Informe Final y Propuesta de Soluciones Sostenibles",
+    "semana": 13
+  },
+  {
+    "nombre": "Presentación de Resultados",
+    "semana": 14
+  }
+]
