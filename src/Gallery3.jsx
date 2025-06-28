@@ -54,7 +54,7 @@ const gallery3 = ({ title, id }) => {
 
         </div>
 
-        <div className="modal fade" id="carrusel" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div className="modal fade" id="carrusel" data-keyboard="false" tabIndex="-1" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="row justify-content-around">
