@@ -17,7 +17,7 @@ const Statistics = ({textTitle, textTitleHighligth, subtitle, id}) => {
                 <img id="" src={require('./img/personas.png')} className="icon" alt=""></img>
               </div>
               <div className=''>
-                <h1 className="text-left">10</h1>
+                <h1 className="text-left">3</h1>
                 <h6 className="text-left">participantes de la jornada de limpieza</h6>
               </div>
             </div>
