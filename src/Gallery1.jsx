@@ -1,11 +1,10 @@
 import videohorizontal1 from './playa/videohorizontal1.mp4'
 import videohorizontal2 from './playa/videohorizontal2.mp4'
 import videohorizontal3 from './playa/videohorizontal3.mp4'
+import videovertical1 from './playa/videovertical1.mp4'
+import videovertical2 from './playa/videovertical2.mp4'
 import './Gallery1.css'
 import { useState } from 'react';
-
-
-
 
 const Gallery1 = ({ title, id }) => {
     const [videoActivo, setVideoActivo] = useState(0);
@@ -14,54 +13,12 @@ const Gallery1 = ({ title, id }) => {
         videohorizontal1,
         videohorizontal2,
         videohorizontal3,
+        videovertical1,
+        videovertical2,
         videohorizontal1,
-        videohorizontal2,
-        videohorizontal3,
     ];
 
     const [modalAbierto, setModalAbierto] = useState(false);
-
-    /*
-
-    const images = [...document.querySelectorAll(".foto1 > video")];
-    const carIn = document.getElementById("carousel-inner");
-
-    let c = 0;
-    while (c < images.length) {
-        var div = document.createElement('div');
-        div.id = 100 + c;
-        div.className = 'carousel-item';
-
-        carIn.appendChild(div);
-
-        var img = document.createElement('img');
-        img.id = c;
-        img.className = 'img-fluid';
-
-        div.appendChild(img);
-        c++;
-    }
-
-    let carouselItems = [...document.querySelectorAll(".carousel-item")];
-
-    images.forEach((img, i) => {
-        img.addEventListener("click", (e) => {
-            let index = 0;
-
-            while (index < images.length) {
-                document.getElementById(index).src = images[index].src;
-
-                if (carouselItems[index].classList.contains("active")) {
-                    carouselItems[index].classList.remove("active");
-                }
-
-                index++;
-            }
-            carouselItems[i].classList.add("active");
-        })
-    });
-*/
-
 
     return (
         <aside id={id} className="">
@@ -70,8 +27,8 @@ const Gallery1 = ({ title, id }) => {
                 <div className="column">
                     <div className="col mycol">
                         <div className="foto1">
-                            {/*<img src={videohorizontal1} type="button" data-bs-toggle="modal" data-bs-target="#carrusel2"/>*/}
-                            <video src={videohorizontal1} type="button" data-bs-toggle="modal" data-bs-target="#carrusel2"
+                            {/*<img src={videohorizontal1} type="button" />*/}
+                            <video src={videohorizontal1} type="button"
                                 onClick={() => {
                                     setVideoActivo(0);
                                     setModalAbierto(true);
@@ -81,8 +38,8 @@ const Gallery1 = ({ title, id }) => {
 
                     <div className="col mycol">
                         <div className="foto1">
-                            {/*<img src={videohorizontal2} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"/>*/}
-                            <video src={videohorizontal3} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"
+                            {/*<img src={videohorizontal2} type="button" />*/}
+                            <video src={videohorizontal2} type="button"
                                 onClick={() => {
                                     setVideoActivo(1);
                                     setModalAbierto(true);
@@ -90,8 +47,8 @@ const Gallery1 = ({ title, id }) => {
                         </div>
 
                         <div className="foto1 float-end">
-                            {/*<img src={videohorizontal3} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"/>*/}
-                            <video src={videohorizontal3} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"
+                            {/*<img src={videohorizontal3} type="button" />*/}
+                            <video src={videohorizontal3} type="button"
                                 onClick={() => {
                                     setVideoActivo(2);
                                     setModalAbierto(true);
@@ -106,20 +63,20 @@ const Gallery1 = ({ title, id }) => {
                     <div className="row justify-content-md-center">
                         <div className="column4">
                             <div className="foto1 mx-auto">
-                                {/*<img src={videohorizontal1} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"/>*/}
-                                <video src={videohorizontal3} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"
+                                {/*<img src={videohorizontal1} type="button" />*/}
+                                <video src={videovertical1} type="button"
                                     onClick={() => {
-                                        setVideoActivo(0);
+                                        setVideoActivo(3);
                                         setModalAbierto(true);
                                     }} />
                             </div>
                         </div>
                         <div className="column5">
                             <div className="foto1 mx-auto">
-                                {/*<img src="img/Fondosite.webp" type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"/>*/}
-                                <video src={videohorizontal2} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"
+                                {/*<img src="img/Fondosite.webp" type="button"/>*/}
+                                <video src={videovertical2} type="button"
                                     onClick={() => {
-                                        setVideoActivo(1);
+                                        setVideoActivo(4);
                                         setModalAbierto(true);
                                     }} />
                             </div>
@@ -128,10 +85,10 @@ const Gallery1 = ({ title, id }) => {
 
                     <div className="row">
                         <div className="foto1">
-                            {/*<img src={videohorizontal1} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"/>*/}
-                            <video src={videohorizontal3} type="button" data-bs-toggle="modal2" data-bs-target="#carrusel2"
+                            {/*<img src={videohorizontal1} type="button"/>*/}
+                            <video src={videohorizontal1} type="button"
                                 onClick={() => {
-                                    setVideoActivo(2);
+                                    setVideoActivo(0);
                                     setModalAbierto(true);
                                 }} />
                         </div>
@@ -142,7 +99,7 @@ const Gallery1 = ({ title, id }) => {
             {modalAbierto &&
                 <div className="modal-overlay">
                     <div className="modal-video-content">
-                        <button className="cerrar" onClick={() => setModalAbierto(false)}>×</button>
+                        <button className="cerrar" onClick={() => setModalAbierto(false)}><label>x</label></button>
 
                         <div>
                             <video
@@ -150,24 +107,24 @@ const Gallery1 = ({ title, id }) => {
                                 className="d-block w-100"
                                 controls
                                 autoPlay
+                                style={{maxHeight: "70vh"}}
                             />
                         </div>
                         <div className="d-flex gap-2 mt-3">
-                            <button className="btn btn-primary" onClick={() => {
+                            <button className="btn btn-info" onClick={() => {
                                 videoActivo > 0
                                     ?
                                     setVideoActivo(videoActivo - 1)
                                     :
                                     setVideoActivo(videos.length - 1)
-                            }}>
-                                Atrás</button>
-                            <button className="btn btn-primary" onClick={() => {
+                            }}><strong>Atrás</strong></button>
+                            <button className="btn btn-info" onClick={() => {
                                 videoActivo < videos.length - 1
                                     ?
                                     setVideoActivo(videoActivo + 1)
                                     :
                                     setVideoActivo(0)
-                            }}>Siguiente
+                            }}><strong>Siguiente</strong> 
                             </button>
                         </div>
                     </div>
