@@ -1,9 +1,9 @@
 import React from "react";
 import './DataTable.css';
 
-const DataTable = ({ title, actividades }) => {
+const DataTable = ({ id, title, actividades }) => {
   return (
-    <section className=''>
+    <section className='' id={id}>
       <h2 className='d-none d-lg-block mr-4'>{title}</h2>
       <div className="table-responsive">
         <table className="table">

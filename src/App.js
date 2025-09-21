@@ -10,13 +10,13 @@ import actividades from './actividades.json'
 function App() {
   return (
     <div className="App">
-      <Header brand='Por un Huanchaco limpio' link1='Evidencias fotográficas' link2='Cronograma' link3='Metas' link4='Evidencias audiovisuales'></Header>
+      <Header brand='Por un Huanchaco limpio' link1='Evidencias fotográficas' link2='Metas' link3='Cronograma' link4='Evidencias audiovisuales'></Header>
 
       <Slides></Slides>
 
       <Gallery3 id='EvidenciasFotograficas' title='Evidencias fotográficas'></Gallery3>
 
-      <Statistics id='Estadisticas' textTitle='Nuestras metas' textTitleHighligth='en números' subtitle='Fuente: Formato ICD elaborado por el grupo'></Statistics>
+      <Statistics id='Metas' textTitle='Nuestras metas' textTitleHighligth='en números' subtitle='Fuente: Formato ICD elaborado por el grupo'></Statistics>
 
       <DataTable id='Cronograma' title='Cronograma'
         actividades={actividades}>

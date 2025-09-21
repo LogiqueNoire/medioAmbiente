@@ -16,10 +16,10 @@ const Header = ({ brand, link1, link2, link3, link4 }) => {
               <a className="nav-link" href="#EvidenciasFotograficas"><h5 className='mb-0'>{link1}</h5></a>
             </li>
             <li className="nav-item" >
-              <a className="nav-link" href="#Estadisticas"><h5 className='mb-0'>{link2}</h5></a>
+              <a className="nav-link" href="#Metas"><h5 className='mb-0'>{link2}</h5></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#navbarNav"><h5 className='mb-0'>{link3}</h5></a>
+              <a className="nav-link" href="#Cronograma"><h5 className='mb-0'>{link3}</h5></a>
             </li>
             <li className="nav-item" >
               <a className="nav-link" href="#EvidenciasAudiovisuales"><h5 className='mb-0'>{link4}</h5></a>
